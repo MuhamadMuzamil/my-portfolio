@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-surface: #121414;
+  --color-surface-container: #1e2020;
+  --color-primary: #ffb787;
+  --color-primary-container: #FF8000;
+  --color-secondary: #219B9D;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-[#e2e2e2] font-sans antialiased;
+  }
+}
+
+.glass {
+  background: rgba(18, 20, 20, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.timeline-gradient {
+  background: linear-gradient(to bottom, transparent, #FF8000, transparent);
+}
